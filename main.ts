@@ -35,7 +35,21 @@ interface Person {
 }
 
 export interface PersonInfo {
-  // TODO: define type
+  name: string;
+  height: string;
+  gender: "male" | "female" | "divers";
+  homeworld: string;
+  films: Film[];
+}
+
+export interface Film {
+  title: string;
+  director: string;
+  release_date: string;
+}
+
+export interface Homeworld {
+  name: string;
 }
 
 // Task 1: write a function using promise based fetch api
